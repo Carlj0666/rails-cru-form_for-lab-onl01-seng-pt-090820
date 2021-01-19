@@ -1,0 +1,7 @@
+<h1>Edit A Song</h1>
+<%= form_tag(songs_path) do |f| %>
+  <%= text_field_tag :'song[name]' %><br>
+  <%= text_field_tag :'song[artist_id]' %><br>
+  <%= text_field_tag :'song[genre_id]' %><br>
+  <%= submit_tag "Update Song" %>
+  <% end %>
